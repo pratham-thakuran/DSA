@@ -1,0 +1,17 @@
+public class averagearrays{
+
+    static double getAverage(int[] arr){
+        int sum = 0;
+        for (int i : arr){
+            sum+=i;
+        }
+        int size = arr.length;
+        double avg = (double)sum / size;
+        return avg;
+    }
+
+    public static void main(String[] args){
+        int[] arr = {2,4,1,3};
+        System.out.println(getAverage(arr));
+    }
+}
